@@ -1,0 +1,10 @@
+void setup() {
+  // Initialize the serial communication at a baud rate of 9600
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Send the character 'o' over UART
+  Serial.write('o');
+  delay(1000); // Wait for 1 second before sending the next 'o'
+}
